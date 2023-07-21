@@ -1,6 +1,8 @@
 <?php
 
 require_once __DIR__ . "/models/Movie.php";
+require_once __DIR__ . "/models/Actors.php";
+
 
 $movie = new Movie('Fast and Furious', 2001);
 $movie->setActors(["Vin Diesel ", "Paul Walker", "Michelle Rodriguez", "Jordana Brewster"]);
