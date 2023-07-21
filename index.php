@@ -1,23 +1,7 @@
 <?php
-class Movie
-{
-    public $title;
-    public $releaseYear;
-    public $actors = [];
-    function __construct(string $title, int $releaseYear)
-    {
-        $this->title = $title;
-        $this->releaseYear =  $releaseYear;
-    }
-    public function getReleaseYear()
-    {
-        return $this->releaseYear;
-    }
-    public function setActors(array $actors)
-    {
-        $this->actors = $actors;
-    }
-}
+
+require_once __DIR__ . "/models/Movie.php";
+
 $movie = new Movie('Fast and Furious', 2001);
 $movie->setActors(["Vin Diesel ", "Paul Walker", "Michelle Rodriguez", "Jordana Brewster"]);
 var_dump($movie);
