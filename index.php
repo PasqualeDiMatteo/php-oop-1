@@ -3,8 +3,16 @@ class Movie
 {
     public $title;
     public $releaseYear;
+    function __construct(string $title, int $releaseYear)
+    {
+        $this->title = $title;
+        $this->releaseYear =  $releaseYear;
+    }
+    public function getReleaseYear()
+    {
+        return $this->releaseYear;
+    }
 }
-
 ?>
 
 <!DOCTYPE html>
