@@ -13,6 +13,10 @@ class Movie
         return $this->releaseYear;
     }
 }
+$movie = new Movie('Fast and Furious', 2001);
+
+var_dump($movie);
+
 ?>
 
 <!DOCTYPE html>
