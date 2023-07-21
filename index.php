@@ -3,6 +3,7 @@ class Movie
 {
     public $title;
     public $releaseYear;
+    public $actors = [];
     function __construct(string $title, int $releaseYear)
     {
         $this->title = $title;
@@ -12,9 +13,13 @@ class Movie
     {
         return $this->releaseYear;
     }
+    public function setActors(array $actors)
+    {
+        $this->actors = $actors;
+    }
 }
 $movie = new Movie('Fast and Furious', 2001);
-
+$movie->setActors(["Vin Diesel ", "Paul Walker", "Michelle Rodriguez", "Jordana Brewster"]);
 var_dump($movie);
 
 ?>
